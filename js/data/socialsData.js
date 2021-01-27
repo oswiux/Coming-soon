@@ -8,6 +8,13 @@ const socialsData = [
         href: '#'
     },
     {
+        icon: 'hantelis',
+        href: '#'
+    },
+    4151,
+    'adsfdg',
+    [],
+    {
         icon: 'dribbble',
         href: '#'
     },
@@ -21,6 +28,10 @@ const socialsData = [
     },
     {
         icon: 'linkedin',
+        href: '#'
+    },
+    {
+        icon: 'skype',
         href: '#'
     },
     {
