@@ -14,12 +14,10 @@
     border: none;
     border-bottom: 2px solid #ccc;
     resize: vertical;
+    background-color: transparent;
+    outline: none;
 }
 .form > textarea {
     min-height: 94px;
     max-height: 262px;
 }
-.form > button {
-    display: inline-block;
-}
-   

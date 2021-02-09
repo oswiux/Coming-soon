@@ -42,6 +42,14 @@
 .hero form {
     margin-bottom: 20px;
 }
+.hero .form > input {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.hero .form > input::placeholder {
+    color: #fff;
+    
+}
 
 .hero .mouse {
 }
@@ -78,11 +86,11 @@ main .block-description > a:hover {
     float: right;
 }
     @media (max-width: 1100px) { 
-    .form > input {
+    .right-column .form > input {
     width: calc((50% - 10px));
     float: left;
     }
-    .form > input:first-of-type {
+    .right-column .form > input:first-of-type {
         margin-right: 20px;
 }
 }
