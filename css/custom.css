@@ -1,46 +1,58 @@
 /* basic style */
 
 .bg-main {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 /* hero section */
 
 .hero {
-    text-align: center;
-    padding-bottom: 30px;
+  min-height: 100vh;
+  text-align: center;
+  padding-bottom: 30px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
 }
 
 .hero .logo {
-    display: inline-block;
-    height: 30px;
-    margin-bottom: 40px;
+  display: inline-block;
+  height: 30px;
+  margin-bottom: 40px;
 }
 
 .hero .title {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 50px;
-    line-height: 50px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .hero .subtitle {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 60px;
-    font-size: 18px;
-    line-height: 22px;
-    color: #555;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #555;
 }
 
 .hero .clock {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .hero form {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.hero .form > input {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.hero .form > input::placeholder {
+  color: #fff;
 }
 
 .hero .mouse {
@@ -49,114 +61,127 @@
 /* main section */
 
 .left-column {
-    display: inline-block;
-    float: left;
-    width: 50%;
+  display: inline-block;
+  float: left;
+  width: 50%;
 }
 .right-column {
-    display: inline-block;
-    float: right;
-    width: 40%;
+  display: inline-block;
+  float: right;
+  width: 40%;
 }
 
 main .block-title {
-    margin-bottom: 30px;
-    text-transform: uppercase;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 main .block-description {
-    margin-bottom: 30px;
-    font-size: 18px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 main .block-description > a {
-    color: #ea1e63;
-    text-decoration: none;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 main .block-description > a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+.right-column .form button {
+  float: right;
+}
+@media (max-width: 1100px) {
+  .right-column .form > input {
+    width: calc((50% - 10px));
+    float: left;
+  }
+  .right-column .form > input:first-of-type {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 900px) {
-    .left-column {
-        width: 100%;
-        margin-bottom: 60px;
-    }
-    .right-column {
-        width: 100%;
-    }
+  .left-column {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .right-column {
+    width: 100%;
+  }
 }
 
 /* footer section */
 
 footer.container {
-    text-align: center;
-    line-height: 30px;
-    color: #fff9;
-    padding-top: 0;
+  text-align: center;
+  line-height: 30px;
+  color: #fff9;
+  padding-top: 0;
 }
 .container > .socials {
-    padding: 15px 0;
-    border-bottom: 2px solid #fff;
+  padding: 15px 0;
+  border-bottom: 2px solid #fff;
 }
 .socials > .fa {
-    width: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 50%;
-    transition: all 0.5s;
+  width: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.5s;
 }
 .socials > .fa:hover {
-    background-color: #fff;
-    color: #03a9f4;
+  background-color: #fff;
+  color: #03a9f4;
 }
 
 footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-logo {
-    height: 40px;
-    margin: 30px 0;
+  height: 40px;
+  margin: 30px 0;
 }
 .bottom-texts {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 20px;
 }
 .bottom-texts > p {
-    position: relative;
+  position: relative;
 }
 .bottom-texts > p::before {
-    display: inline-block;
-    content: '';
-    width: 2px;
-    height: 18px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: -11px;
-    transform: translateY(-50%);
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  transform: translateY(-50%);
 }
 .bottom-texts > p:first-of-type::before {
-    display: none;
+  display: none;
 }
 
 .bottom-texts a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 footer > .short-row > p {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 @media (max-width: 700px) {
-    .bottom-texts {
-        flex-direction: column;
-    }
-    .bottom-texts > p::before {
-        display: none;
-    }
+  .bottom-texts {
+    flex-direction: column;
+  }
+  .bottom-texts > p::before {
+    display: none;
+  }
 }
