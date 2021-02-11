@@ -118,17 +118,31 @@ footer.container {
   color: #fff9;
   padding-top: 0;
 }
+.container > .back-to-top {
+  position: relative;
+}
+.container > .back-to-top > .btn {
+position: absolute;
+top: -25px;
+right: -11px;
+}
+
 .container > .socials {
   padding: 15px 0;
   border-bottom: 2px solid #fff;
 }
 .socials > .fa {
   width: 40px;
+  height: 40px;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 0px;
   color: #fff;
   border-radius: 50%;
   transition: all 0.5s;
+}
+.socials > .fa::before {
+  font-size: 20px;
+
 }
 .socials > .fa:hover {
   background-color: #fff;
@@ -177,7 +191,10 @@ footer > .short-row > p {
   width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
+  .container > .back-to-top {
+    display: none;
+  }
   .bottom-texts {
     flex-direction: column;
   }

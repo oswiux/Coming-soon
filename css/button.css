@@ -3,6 +3,7 @@
     padding: 20px 40px;
     font-size: 18px;
     line-height: 20px;
+    text-align: center;
     border-radius: 3px;
     background-color: var(--secondary-color);
     color: #fff;
@@ -11,4 +12,12 @@
 }
 .btn:hover {
     background-color: var(--secondary-color-dark);
+}
+.btn.fa{
+    font-size: 26;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
+    border-radius: 50%;
 }
